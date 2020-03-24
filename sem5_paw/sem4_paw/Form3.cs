@@ -74,7 +74,23 @@ namespace sem4_paw
             writer.WriteStartElement("CursValutar");
 
             writer.WriteStartElement("CursEUR");
+            writer.WriteAttributeString("valuta", "EUR");
             writer.WriteValue(tbEUR.Text);
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("CursUSD");
+            writer.WriteAttributeString("valuta", "USD");
+            writer.WriteValue(tbUSD.Text);
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("CursGBP");
+            writer.WriteAttributeString("valuta", "GBP");
+            writer.WriteValue(tbGBP.Text);
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("CursXAU");
+            writer.WriteAttributeString("valuta", "XAU");
+            writer.WriteValue(tbXAU.Text);
             writer.WriteEndElement();
 
             writer.WriteEndElement();
